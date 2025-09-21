@@ -1,15 +1,15 @@
 ## CSC 371 Tuesday 12:15pm Jason Devaraj
 
 ## GPA Calculator
-    At least five labels (textviews) and text fields that accept grades for 5 courses.
+    X At least five labels (textviews) and text fields that accept grades for 5 courses.
 
-    A button with the label “Compute GPA”
+    X A button with the label “Compute GPA”. 
 
-    A Label to display the GPA.
+    X A Label to display the GPA.
 
-    The app should be called ‘GPA_[your net id]_Calculator’
+    X The app should be called ‘GPA_[your net id]_Calculator’
 
-    Select and assign an icon for the app.
+    X Select and assign an icon for the app.
 
     Your app should not accept empty fields
 
