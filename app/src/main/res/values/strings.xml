@@ -1,12 +1,14 @@
 <resources>
     <string name="app_name">GPA_Jason Devaraj_Calculator</string>
+    <string name="string0">GPA Calculator</string>
     <string name="string1">Course 1:</string>
     <string name="string2">Course 2:</string>
     <string name="string3">Course 3:</string>
     <string name="string4">Course 4:</string>
     <string name="string5">Course 5:</string>
     <string name="string6">GPA:</string>
-    <string name="button">Compute GPA:</string>
+    <string name="string7">Enter your grades and press calculate.</string>
+    <string name="button">Compute GPA</string>
 
 </resources>
 
