@@ -11,9 +11,9 @@
 
     X Select and assign an icon for the app.
 
-    Your app should not accept empty fields
+    X Your app should not accept empty fields
 
-    Your app should display a red background if GPA is less than 60, Yellow for 61-79, and Green for 80 to 100.
+    X Your app should display a red background if GPA is less than 60, Yellow for 61-79, and Green for 80 to 100.
 
     The text on the compute button should be changed to clear form once clicked.
 

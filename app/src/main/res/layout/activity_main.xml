@@ -99,6 +99,7 @@
             android:layout_height="87dp"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:backgroundTint="@android:color/holo_blue_bright"
             android:text="@string/button" />
 
         <TextView
