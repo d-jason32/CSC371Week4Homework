@@ -37,7 +37,8 @@ class MainActivity : AppCompatActivity() {
         val form5 =  findViewById<EditText>(R.id.editTextNumberDecimal5)
 
         /*
-        If
+        If the button says clear form and you click on an EditText,
+        all the boxes will clear.
          */
         form1.setOnClickListener {
             clearForm()

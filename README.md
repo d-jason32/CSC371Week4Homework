@@ -11,8 +11,7 @@
 8. If the entry field does not have the right data it becomes red. 
 9. When you start typing in the fields again after the GPA calculation, it changes the clear form button to compute gpa. 
 
-
-    The text on the compute button should be changed to clear form once clicked.
-
-    When you start typing in the fields again after the first GPA calculation, change back the button text to show computed GPA.
-
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
