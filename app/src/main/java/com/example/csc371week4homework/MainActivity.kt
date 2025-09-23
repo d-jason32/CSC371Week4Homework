@@ -24,8 +24,51 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
-
+            resetTextboxColor()
+            checkType()
+            clearForm()
             calculateGPA()
+        }
+
+        val form1 = findViewById<EditText>(R.id.editTextNumberDecimal)
+        val form2 =  findViewById<EditText>(R.id.editTextNumberDecimal2)
+        val form3 =  findViewById<EditText>(R.id.editTextNumberDecimal3)
+        val form4 =  findViewById<EditText>(R.id.editTextNumberDecimal4)
+        val form5 =  findViewById<EditText>(R.id.editTextNumberDecimal5)
+
+        /*
+        If
+         */
+        form1.setOnClickListener {
+            clearForm()
+        }
+        form2.setOnClickListener {
+            clearForm()
+        }
+        form3.setOnClickListener {
+            clearForm()
+        }
+        form4.setOnClickListener {
+            clearForm()
+        }
+        form5.setOnClickListener {
+            clearForm()
+        }
+    }
+
+    fun clearForm() {
+        val color = findViewById<ConstraintLayout>(R.id.main)
+        val output = findViewById<TextView>(R.id.textView5)
+
+        if (findViewById<Button>(R.id.button).text.toString() == "Clear Form"){
+            findViewById<EditText>(R.id.editTextNumberDecimal).setText("");
+            findViewById<EditText>(R.id.editTextNumberDecimal2).setText("");
+            findViewById<EditText>(R.id.editTextNumberDecimal3).setText("");
+            findViewById<EditText>(R.id.editTextNumberDecimal4).setText("");
+            findViewById<EditText>(R.id.editTextNumberDecimal5).setText("");
+            findViewById<Button>(R.id.button).setText("Compute GPA")
+            color.setBackgroundColor(Color.WHITE)
+            output.text = "Enter your grades and press calculate!"
         }
     }
 
@@ -56,10 +99,30 @@ class MainActivity : AppCompatActivity() {
         else if (computedGPA >= 60 && computedGPA < 80) color.setBackgroundColor(Color.YELLOW)
         else if (computedGPA >= 80) color.setBackgroundColor(Color.GREEN)
 
+        findViewById<Button>(R.id.button).setText("Clear Form")
+
     }
 
+    fun resetTextboxColor(){
+        findViewById<EditText>(R.id.editTextNumberDecimal).setBackgroundColor(Color.TRANSPARENT)
+        findViewById<EditText>(R.id.editTextNumberDecimal2).setBackgroundColor(Color.TRANSPARENT)
+        findViewById<EditText>(R.id.editTextNumberDecimal3).setBackgroundColor(Color.TRANSPARENT)
+        findViewById<EditText>(R.id.editTextNumberDecimal4).setBackgroundColor(Color.TRANSPARENT)
+        findViewById<EditText>(R.id.editTextNumberDecimal5).setBackgroundColor(Color.TRANSPARENT)
+    }
 
-    fun clearForm() {
+    fun checkType() {
+        val gpa1 : Double? = findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDoubleOrNull()
+        val gpa2 : Double? = findViewById<EditText>(R.id.editTextNumberDecimal2).text.toString().toDoubleOrNull()
+        val gpa3 : Double? = findViewById<EditText>(R.id.editTextNumberDecimal3).text.toString().toDoubleOrNull()
+        val gpa4 : Double? = findViewById<EditText>(R.id.editTextNumberDecimal4).text.toString().toDoubleOrNull()
+        val gpa5 : Double? = findViewById<EditText>(R.id.editTextNumberDecimal5).text.toString().toDoubleOrNull()
+
+        if (gpa1 == null) findViewById<EditText>(R.id.editTextNumberDecimal).setBackgroundColor(Color.RED)
+        if (gpa2 == null) findViewById<EditText>(R.id.editTextNumberDecimal2).setBackgroundColor(Color.RED)
+        if (gpa3 == null) findViewById<EditText>(R.id.editTextNumberDecimal3).setBackgroundColor(Color.RED)
+        if (gpa4 == null) findViewById<EditText>(R.id.editTextNumberDecimal4).setBackgroundColor(Color.RED)
+        if (gpa5 == null) findViewById<EditText>(R.id.editTextNumberDecimal5).setBackgroundColor(Color.RED)
 
     }
 
