@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        /**
+         * Controls the button.
+         */
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
             resetTextboxColor()
@@ -57,6 +60,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Method to clear the form.
+     * This clears all the EditText fields.
+     * Changes the button to say compute GPA.
+     * And the text at the bottom to enter your grades and
+     * press calculate.
+     */
     fun clearForm() {
         val color = findViewById<ConstraintLayout>(R.id.main)
         val output = findViewById<TextView>(R.id.textView5)
@@ -73,6 +83,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Method to calculate the gpa.
+     * Also sets the button to say clear form.
+     * This method also changes the background color
+     * based on the computed gpa.
+     */
     fun calculateGPA() {
         val gpa1 : Double? = findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDoubleOrNull()
         val gpa2 : Double? = findViewById<EditText>(R.id.editTextNumberDecimal2).text.toString().toDoubleOrNull()
@@ -101,9 +117,11 @@ class MainActivity : AppCompatActivity() {
         else if (computedGPA >= 80) color.setBackgroundColor(Color.GREEN)
 
         findViewById<Button>(R.id.button).setText("Clear Form")
-
     }
 
+    /**
+     * Method to change the color of the app back to white.
+     */
     fun resetTextboxColor(){
         findViewById<EditText>(R.id.editTextNumberDecimal).setBackgroundColor(Color.TRANSPARENT)
         findViewById<EditText>(R.id.editTextNumberDecimal2).setBackgroundColor(Color.TRANSPARENT)
@@ -112,6 +130,12 @@ class MainActivity : AppCompatActivity() {
         findViewById<EditText>(R.id.editTextNumberDecimal5).setBackgroundColor(Color.TRANSPARENT)
     }
 
+    /**
+     * Method to check the type of the input.
+     * If it is a number it will be an integer.
+     * If it is a string it will be null.
+     * Any entered string will change the text box to red.
+     */
     fun checkType() {
         val gpa1 : Double? = findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDoubleOrNull()
         val gpa2 : Double? = findViewById<EditText>(R.id.editTextNumberDecimal2).text.toString().toDoubleOrNull()
