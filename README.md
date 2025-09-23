@@ -1,23 +1,16 @@
 ## CSC 371 Tuesday 12:15pm Jason Devaraj
 
 ## GPA Calculator
-    X At least five labels (textviews) and text fields that accept grades for 5 courses.
+1. App has 5 labels and text fields that only accept doubles as grades.
+2. There is a button to compute your GPA.
+3. There is a text label to display the GPA. 
+4. The app icon is a graduation cap.
+5. You cannot accept any empty fields. 
+6. The background turns red if the gpa is less than 60, yellow for 60-80, and green if greater than 80.
+7. Added a scrolling view so the app works in landscape and portrait. 
 
-    X A button with the label “Compute GPA”. 
-
-    X A Label to display the GPA.
-
-    X The app should be called ‘GPA_[your net id]_Calculator’
-
-    X Select and assign an icon for the app.
-
-    X Your app should not accept empty fields
-
-    X Your app should display a red background if GPA is less than 60, Yellow for 61-79, and Green for 80 to 100.
 
     The text on the compute button should be changed to clear form once clicked.
-
-Additional challenges:
 
     When you start typing in the fields again after the first GPA calculation, change back the button text to show computed GPA.
 
