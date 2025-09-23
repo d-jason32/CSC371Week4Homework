@@ -12,6 +12,8 @@
 9. When you start typing in the fields again after the GPA calculation, it changes the clear form button to compute gpa. 
 
 ![img.png](img0.png)
-![img_1.png](img0.png)
+![img_1.png](img1.png)
 ![img_2.png](img2.png)
+![img.png](img.png)
+![img_1.png](img_1.png)
 ![img_3.png](img3.png)
